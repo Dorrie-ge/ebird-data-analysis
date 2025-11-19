@@ -28,8 +28,8 @@ UN: admin
 PW: admin
 
 ## 🌐 Live Demo
+Generated webpage: https://evelynh037.github.io/ebird-data-analysis/
 
 Try the deployed Streamlit app here:  
  **https://ebird-data-analysis-79q4xqgr2x6fgjkgfonpzs.streamlit.app**
-
 This app allows you to explore recent bird observations, hotspot distributions, and species-level patterns using the eBird API.
