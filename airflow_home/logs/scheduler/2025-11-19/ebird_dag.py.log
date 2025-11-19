@@ -1320,3 +1320,52 @@ ValueError: EBIRD_API_KEY environment variable is not set
 [2025-11-19T07:55:36.985+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:55:36.985+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2025-11-19T07:55:36.997+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:55:36.997+0000] {dag.py:3947} INFO - Setting next_dagrun for ebird_etl to 2025-11-19 00:00:00+00:00, run_after=2025-11-20 00:00:00+00:00
 [2025-11-19T07:55:37.006+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ebird_dag.py took 0.673 seconds
+[2025-11-19T07:56:07.058+0000] {processor.py:161} INFO - Started process (PID=270) to work on /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:56:07.059+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ebird_dag.py for tasks to queue
+[2025-11-19T07:56:07.060+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:56:07.060+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:56:07.439+0000] {processor.py:840} INFO - DAG(s) 'ebird_etl' retrieved from /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:56:07.454+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:56:07.454+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-19T07:56:07.464+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:56:07.464+0000] {dag.py:3947} INFO - Setting next_dagrun for ebird_etl to 2025-11-19 00:00:00+00:00, run_after=2025-11-20 00:00:00+00:00
+[2025-11-19T07:56:07.472+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ebird_dag.py took 0.418 seconds
+[2025-11-19T07:56:37.576+0000] {processor.py:161} INFO - Started process (PID=276) to work on /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:56:37.578+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ebird_dag.py for tasks to queue
+[2025-11-19T07:56:37.583+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:56:37.582+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:56:38.206+0000] {processor.py:840} INFO - DAG(s) 'ebird_etl' retrieved from /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:56:38.234+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:56:38.234+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-19T07:56:38.246+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:56:38.246+0000] {dag.py:3947} INFO - Setting next_dagrun for ebird_etl to 2025-11-19 00:00:00+00:00, run_after=2025-11-20 00:00:00+00:00
+[2025-11-19T07:56:38.255+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ebird_dag.py took 0.694 seconds
+[2025-11-19T07:57:08.590+0000] {processor.py:161} INFO - Started process (PID=282) to work on /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:57:08.592+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ebird_dag.py for tasks to queue
+[2025-11-19T07:57:08.594+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:57:08.594+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:57:09.097+0000] {processor.py:840} INFO - DAG(s) 'ebird_etl' retrieved from /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:57:09.128+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:57:09.127+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-19T07:57:09.140+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:57:09.139+0000] {dag.py:3947} INFO - Setting next_dagrun for ebird_etl to 2025-11-19 00:00:00+00:00, run_after=2025-11-20 00:00:00+00:00
+[2025-11-19T07:57:09.149+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ebird_dag.py took 0.567 seconds
+[2025-11-19T07:57:39.263+0000] {processor.py:161} INFO - Started process (PID=288) to work on /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:57:39.264+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ebird_dag.py for tasks to queue
+[2025-11-19T07:57:39.267+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:57:39.267+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:57:39.872+0000] {processor.py:840} INFO - DAG(s) 'ebird_etl' retrieved from /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:57:39.896+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:57:39.895+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-19T07:57:39.907+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:57:39.907+0000] {dag.py:3947} INFO - Setting next_dagrun for ebird_etl to 2025-11-19 00:00:00+00:00, run_after=2025-11-20 00:00:00+00:00
+[2025-11-19T07:57:39.916+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ebird_dag.py took 0.665 seconds
+[2025-11-19T07:58:10.416+0000] {processor.py:161} INFO - Started process (PID=294) to work on /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:58:10.418+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ebird_dag.py for tasks to queue
+[2025-11-19T07:58:10.421+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:58:10.421+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:58:11.063+0000] {processor.py:840} INFO - DAG(s) 'ebird_etl' retrieved from /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:58:11.090+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:58:11.090+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-19T07:58:11.102+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:58:11.102+0000] {dag.py:3947} INFO - Setting next_dagrun for ebird_etl to 2025-11-19 00:00:00+00:00, run_after=2025-11-20 00:00:00+00:00
+[2025-11-19T07:58:11.111+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ebird_dag.py took 0.718 seconds
+[2025-11-19T07:58:41.607+0000] {processor.py:161} INFO - Started process (PID=300) to work on /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:58:41.608+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ebird_dag.py for tasks to queue
+[2025-11-19T07:58:41.612+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:58:41.611+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:58:42.241+0000] {processor.py:840} INFO - DAG(s) 'ebird_etl' retrieved from /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:58:42.266+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:58:42.266+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-19T07:58:42.279+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:58:42.279+0000] {dag.py:3947} INFO - Setting next_dagrun for ebird_etl to 2025-11-19 00:00:00+00:00, run_after=2025-11-20 00:00:00+00:00
+[2025-11-19T07:58:42.290+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ebird_dag.py took 0.702 seconds
+[2025-11-19T07:59:12.632+0000] {processor.py:161} INFO - Started process (PID=306) to work on /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:59:12.634+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ebird_dag.py for tasks to queue
+[2025-11-19T07:59:12.638+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:59:12.637+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:59:13.226+0000] {processor.py:840} INFO - DAG(s) 'ebird_etl' retrieved from /opt/airflow/dags/ebird_dag.py
+[2025-11-19T07:59:13.253+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:59:13.253+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-19T07:59:13.266+0000] {logging_mixin.py:188} INFO - [2025-11-19T07:59:13.266+0000] {dag.py:3947} INFO - Setting next_dagrun for ebird_etl to 2025-11-19 00:00:00+00:00, run_after=2025-11-20 00:00:00+00:00
+[2025-11-19T07:59:13.275+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ebird_dag.py took 0.655 seconds
