@@ -5,3 +5,7 @@ env/
 venv/
 .venv/
 ENV/
+airflow_home/
+airflow/airflow.db
+**/__pycache__/
+/src/db/
