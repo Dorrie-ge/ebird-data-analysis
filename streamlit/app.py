@@ -246,24 +246,30 @@ if (
     if df_pred.empty:
         st.warning("数据不足，无法预测未来城市")
     else:
-        # 统计 locName 出现次数（频率越高越可能再次观测到）
-        top_cities = (
-            df_pred["locName"]
-            .value_counts()
-            .reset_index()
-            .rename(columns={"index": "city", "locName": "count"})
-        )
+        # 使用 value_counts 返回的是：
+        #   index -> locName
+        #   values -> count
+        vc = df_pred["locName"].value_counts()
 
-        top_cities["probability"] = top_cities["count"] / top_cities["count"].sum()
+        top_cities = pd.DataFrame({
+            "city": vc.index,
+            "count": vc.values
+        })
+
+        # 强制 count 为数值类型 —— 绝对不会报错
+        top_cities["count"] = pd.to_numeric(top_cities["count"], errors="coerce").fillna(0).astype(int)
+
+        # 概率（一定能跑，不会出现字符串问题）
+        total_count = top_cities["count"].sum()
+        if total_count > 0:
+            top_cities["probability"] = top_cities["count"] / total_count
+        else:
+            top_cities["probability"] = 0
 
         st.write("📍 **未来最可能出现的前 5 个城市**（按过去 30 天频率预测）")
         st.dataframe(top_cities.head(5))
 
-        # 给用户解释
-        st.info(
-            "⚠️ 说明：未来 7 天预测基于过去 30 天谁出现得最频繁；"
-            "实际迁徙行为可能受天气、季节和个体差异影响。"
-        )
+        st.info("⚠️ 说明：未来 7 天预测基于过去 30 天谁出现得最频繁；实际迁徙行为可能受天气影响。")
 
     # ======================
     # ② 迁徙方向分析（北/南/不动）
@@ -273,24 +279,20 @@ if (
     if len(df_pred) < 3:
         st.warning("观测点太少，无法分析方向")
     else:
-        # 按时间计算纬度变化速度
-        df_pred = df_pred.sort_values("obsDt")
         df_pred["lat_shift"] = df_pred["lat"].diff()
         df_pred["day_shift"] = df_pred["obsDt"].diff().dt.total_seconds() / (3600 * 24)
 
         df_pred = df_pred.dropna(subset=["lat_shift", "day_shift"])
-
-        # 平均每天纬度变化
         df_pred["lat_per_day"] = df_pred["lat_shift"] / df_pred["day_shift"]
+
         mean_lat_change = df_pred["lat_per_day"].mean()
 
-        # 判断方向
         if mean_lat_change > 0.1:
             direction = "⬆️ **从南向北迁徙（明显北移）**"
         elif mean_lat_change < -0.1:
             direction = "⬇️ **从北向南迁徙（明显南移）**"
         else:
-            direction = "➡️ **无明显方向，基本保持在同一纬度活动**"
+            direction = "➡️ **无明显方向，停留在同一纬度活动**"
 
         st.success(direction)
         st.write(f"（平均每天纬度变化：{mean_lat_change:.4f}°）")
