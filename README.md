@@ -1,5 +1,5 @@
 # Hidden Stories in Bird Watching with ebird Api
-An end-to-end ETL + Visualization data pipeline that transforms raw eBird API data into meaningful ecological insights for both practical exploration and scientific analysis.
+An end-to-end ETL + Visualization data pipeline that transforms raw eBird API data into meaningful ecological insights in real time for both practical exploration and scientific analysis.
 - Quickly check local birds by state or species
 - View scatterplots of sightings across the U.S.
 - Identify rare or uncommon species in a region
